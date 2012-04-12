@@ -1,0 +1,160 @@
+body{
+	margin:0px;
+	padding:0px;
+	padding-bottom:20px;
+	background:#252525;
+}
+
+	#container{
+		margin: 0 auto;
+		/*width: 690px;*/
+		width: 100%;
+		height: 350px;
+	}
+
+	#container header{
+		margin: 0;
+		padding: 0;
+		background: url(/img/login_shadow.png) no-repeat;
+	}
+
+	div.line{
+		margin: -70px auto;
+		border-bottom: 1px #656565 solid;
+	}
+
+		#access{
+			/*width: 250px;*/
+			width: 40%;
+			margin: 120px auto;
+			text-align: center;
+			z-index: 10;
+		}
+
+			input{
+				border-radius: 5px;
+				margin: 10px 0;
+				font-weight: bold;
+				padding: 10px 10px 10px 40px;
+			}
+
+			
+
+			input[type="text"], input[type="password"]{
+				width: 80%;
+			}
+
+				input#user{
+					background: #fff url(/img/user_icon&24.png) 10px 5px no-repeat;
+				}
+
+				input#password{
+					background: #fff url(/img/key_icon&24.png) 10px 5px no-repeat;
+				}
+			
+			input[type="text"]:focus, input[type="password"]:focus{
+				box-shadow: 0px 0px 10px rgba(0,135,173,.7);
+			}				
+
+			input[type="submit"]{
+				width:45%;
+				color: white;
+				cursor: pointer;
+			}
+				input#send{
+					background: #0087ad url(/img/arrow_right_icon&24.png) 10px 5px no-repeat;
+				}
+
+			input[type="submit"]:hover{
+				box-shadow: 0px 0px 5px rgba(255,255,190,.5);
+				color: white;
+			}
+
+/* sección Cometarios */
+#comentsFrm ul{
+	width: 98%;
+	list-style-type: none;
+	list-style-position: outside;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+#comentsFrm li:first-child, li:last-child{
+	border-bottom: 1px solid #777;
+}
+
+#comentsFrm li:last-child{
+	clear: both;
+}
+
+	#comentsFrm h2{
+		margin: 0px;
+		display: inline;
+	}
+
+	.requiredNotification{
+		color: #d75902;
+		margin: 5px 30px 0 0;
+		display: inline;
+		float: right;
+	}
+
+	#comentsFrm label{
+		width: 30%;
+		margin: 10px 0;
+		display: inline-block;
+		font-weight: bold;
+	}
+
+	#comentsFrm select, #comentsFrm textarea, #comentsFrm input[type="text"]{
+		border-radius: 5px;
+		margin: 10px 0;
+		font-weight: bold;
+		padding: 10px;
+		background: #fff;
+	}
+
+		
+		#comentsFrm select{
+			width: 69%;
+		}
+
+		#comentsFrm textarea, #comentsFrm input[type="text"]{
+			width: 66%;
+			color: #000;
+		}
+
+		#comentsFrm input[type="text"]:placeholder{
+			color:gray;
+		}
+
+	#comentsFrm input[type="submit"]{
+		width: 20%;
+	}
+
+	/* Interaccion del Formulario :P */
+	
+	#comentsFrm textarea:focus:invalid, #comentsFrm input[type="text"]:focus:invalid { /* when a field is considered invalid by the browser */
+	    background: #fff url(/img/round_delete_icon&24.png) no-repeat 98% center;
+	    box-shadow: 0 0 5px #d45252;
+	    border-color: #b03535
+	}
+
+	#comentsFrm textarea:required:valid, #comentsFrm input[type="text"]:required:valid{
+		background: #fff url(/img/round_checkmark_icon&24.png) no-repeat 98% center;
+		box-shadow: 0 0 5px #5cd053;
+		border-color: #28921f;
+	}
+
+	::-webkit-validation-bubble-message {
+	    padding: 1em;
+	}
+	
+	.clientProy{
+		color: #EAB000;
+		font-size: 1.3em;
+	}
+
+	.clear{
+		clear: both;
+	}

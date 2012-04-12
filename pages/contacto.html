@@ -1,0 +1,52 @@
+
+	<div class="layout-50 clear-fix overflow-fix">
+	
+		<div class="layout-50-left">
+		
+			<h3>En el Mapa</h3>
+			<div id="map"></div>
+			
+			<h3>Uziel Trujillo</h3>
+			<p>
+               Vasco Nuñez de Balboa #3 Int 105, Fracc. Hornos<br />
+               Acapulco Guerrero, México <br />
+               CP. 39351
+			</p>
+            			
+			<ul class="no-list contact-list">
+				<li class="contact-list-phone"><span>Telefono:</span> 744.1057042</li>
+				<li class="contact-list-mail"><span>Correo:</span> uziel.trujillo@utrujillo.net</li>
+                <li class="contact-list-mail"><span>Correo:</span> uziel.trujillo@hotmail.com</li>
+			</ul>
+		
+		</div>
+
+		<div class="layout-50-right">
+		
+			<h3>Preguntame lo que necesites</h3>
+		
+			<form name="contacto" id="contacto" action="pages/recibeData.php" method="post">
+				
+				<div>
+				
+					<div class="form-line block">
+						<input type="text" name="nombreContaccto" id="nombreContacto" placeholder="Tu Nombre" required />	
+					</div>
+					<div class="form-line block">
+						<input type="email" name="emailContacto" id="emailContacto" placeholder="Tu eMail" required />	
+					</div>					
+					<div class="form-line block">
+						<textarea rows="0" cols="0" name="mensajeContacto" id="mensajeContacto" placeholder="Escribir Mensaje" required ></textarea>	
+					</div>
+					
+					<div class="form-line">
+                    	<input type="submit" value="Enviar" />
+					</div>
+				
+				</div>	
+
+			</form>
+		
+		</div>
+	
+	</div>

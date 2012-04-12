@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="es-ES">
+<head>
+	<meta charset="UTF-8">
+	<title>Login de Acceso</title>
+	<link rel="stylesheet" href="/css/styleIni.css" />
+	<link rel="stylesheet" href="/css/login.css" />
+</head>
+<body>
+	<div id="container">
+		<header></header>
+		<div class="line"></div>
+		<div id="access">
+			<form action="/scripts/login.php" method="post">
+				<span class="requiredNotification">* Usuario o Contraseña Incorrectos</span>
+				<input type="text" name="user" id="user" placeholder="Usuario" />
+				<input type="text" name="password" id="password" placeholder="Contraseña" />
+
+				<input type="submit" name="send" id="send" value="Ingresar" />
+
+			</form>
+		</div>
+
+	</div>
+</body>
+</html>
